@@ -1,0 +1,35 @@
+<h2 style="text-align: center">Add Record of Students</h2>
+<a href="/dashboard">Back</a>
+
+<form #adddetails="ngForm" (ngSubmit)="submit(adddetails.value)">
+  <table align="center" style="margin-top: 50px">
+    <tr>
+      <td>Roll no</td>
+      <td><input type="text" id="rollNo" name="rollNo" ngModel /></td>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td><input type="text" id="Name" name="Name" ngModel /></td>
+    </tr>
+
+ 
+    <tr>
+
+      <td>Date of birth</td>
+      <td><input type="date" id="dob" name="dob" ngModel /></td>
+    </tr>
+
+
+    <tr>
+
+      <td>Score</td>
+
+      <td><input type="text" id="score" name="score" ngModel /></td>
+    </tr>
+
+    <button>Add</button>
+  </table>
+
+  <!-- </form> -->
+</form>

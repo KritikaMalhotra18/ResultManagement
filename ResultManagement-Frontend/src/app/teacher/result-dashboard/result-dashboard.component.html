@@ -1,0 +1,39 @@
+<header>
+
+ 
+</header>
+<main>
+  <button routerLink="add">Add Records</button>
+  
+
+  <table>
+    <tr>
+      <th>Roll No</th>
+
+      <th>Name</th>
+
+      <th>Dob</th>
+
+      <th>Score</th>
+
+      <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let student of students">
+
+      <td>{{ student.rollNo }}</td>
+
+      <td>{{ student.Name }}</td>
+
+     
+      <td>{{ student.dob }}</td>
+
+      <td>{{ student.score }}</td>
+
+      <td> <button routerLink="edit/{{student.rollNo}}">&#9998;</button> <!-- Pen symbol --> <button (click)="deleteStudent(student.rollNo)" >&#10060;</button> <!-- Cross symbol --> </td>
+
+    </tr>
+  </table>
+</main>
+
+<router-outlet></router-outlet>

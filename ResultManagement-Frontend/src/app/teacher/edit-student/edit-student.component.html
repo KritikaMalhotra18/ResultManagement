@@ -1,0 +1,30 @@
+<h2 style="text-align: center">Edit Record of Students</h2>
+
+<form #editdetails="ngForm" (ngSubmit)="submit(editdetails.value)">
+  <table align="center" style="margin-top: 50px">
+
+    <tr>
+      <td>Name</td>
+      <td><input type="text" id="Name" name="Name" ngModel="{{StudentData?.Name}}" /></td>
+    </tr>
+
+ 
+    <tr>
+
+      <td>Date of birth</td>
+      <td><input type="date" id="dob" name="dob" ngModel="{{StudentData?.dob}} "/></td>
+    </tr>
+
+
+    <tr>
+
+      <td>Score</td>
+
+      <td><input type="text" id="score" name="score" ngModel="{{StudentData?.score}}" /></td>
+    </tr>
+
+    <button >Edit</button>
+  </table>
+
+  <!-- </form> -->
+</form>

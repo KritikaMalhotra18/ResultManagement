@@ -1,0 +1,20 @@
+<h2 style="text-align: center">Find Result</h2>
+
+<form #myForm="ngForm">
+  <table align="center">
+    <tr>
+      <td>Roll No</td>
+      <td><input type="text" name="rollNo" [(ngModel)]="rollNo" /></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="name" [(ngModel)]="name" /></td>
+    </tr>
+    <tr>
+      <td><button type="submit" (click) = "search()">Search</button></td>
+
+      <td><button type="button" (click)="clearForm()">Clear</button></td>
+    </tr>
+
+  </table>
+</form>
